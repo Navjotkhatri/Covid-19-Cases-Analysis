@@ -146,6 +146,14 @@ group by location,date,total_cases,total_deaths
 order by date
 
 
+---covid cases day vise
+
+
+select location, date,total_cases,total_deaths from deaths
+where continent is not null
+group by location,date,total_cases,total_deaths
+order by date
+
 select*from vaccinations
 
 
